@@ -35,7 +35,7 @@
 
 ###
 
-<p align="left">Data Engineer | Backend Developer | RPA | QA Tester Automatizado <br><br>- 📚 Soy estudiante de la Licenciatura en Informática con formación Complementaria en la Data Engineering.<br>- ⚡ En mi tiempo libre aprendo de manera autodidacta el funcionamiento del stack MERN que compone Nodejs, Mongodb, React y Express.js. <br>Además de también ayudar a mi amigo en el desarrollo de un videojuego en unity.</p>
+<p align="left">Data Engineer | Backend Developer | RPA | QA Tester Automatizado <br><br>- 📚 Soy estudiante de la Licenciatura en Informática con formación Complementaria en la Data Engineering.<br>- ⚡ En mi tiempo libre aprendo de manera autodidacta el funcionamiento del stack MERN que lo componen Nodejs, Mongodb, React y Express.js. <br>Además de también ayudar a mi amigo en el desarrollo de un videojuego en unity.</p>
 
 ###
 
