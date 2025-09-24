@@ -155,6 +155,11 @@ main section{
     font-size: 50px;
     color: var(--color-400);
 }
+.Section_Skills-contenedor i:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    border-radius: 30px;
+}
 
 
 /* ############### PROYECTOS STYLES ############### */
@@ -191,6 +196,11 @@ main section{
     width: 300px;
     min-height: 300px;
 }
+.Section_Proyectos-Hijo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    border-radius: 30px;
+}
 
 .Section_Proyectos-Hijo h3{
     color: var(--color-500);
@@ -214,6 +224,7 @@ main section{
     padding: 3px;
     color: var(--color-1000);
     background-color: var(--color-100);    
+    border-radius: 5px;
 }
 
 .Section_Proyectos-Hijo a button{
@@ -224,7 +235,10 @@ main section{
     background-color: var(--color-200);
     bottom: 10px;
 }
-
+.Section_Proyectos-Hijo a button:hover{
+    color: var(--color-100);
+    background-color: var(--color-300);
+}
 
 
 
