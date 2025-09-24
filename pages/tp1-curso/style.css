@@ -1,0 +1,786 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* ############### header ####################### */
+
+header{
+    position: sticky;
+    top: 0;
+    padding: 20px 40px;
+    height: 85px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 10px 0px 10px 0px rgba(116, 109, 109, 0.5);
+    z-index: 10;
+}
+
+.header_nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.header_nav img{
+    height: 30px;
+}
+
+.header_nav_anclas{
+    display: flex;
+    gap: 30px;
+}
+
+.header_nav_anclas a{
+    text-decoration: none;
+    color: #1D1E20; 
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+.header_nav_anclas a:hover{
+    color: #6d7081;
+}
+
+.header_botones_derechos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.header_botones_derechos .pais{
+    text-decoration: none;
+    color: #1D1E20;  
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+.header_botones_derechos .pais span:hover{
+    color: #6d7081;
+}
+
+.header_botones_derechos .pais img{
+    height: 20px;
+}
+
+.header_botones_derechos .cuenta{
+    text-decoration: none;
+    color: #1D1E20; 
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    height: 45px;
+    width: 110px;
+    border: 1px solid black;
+    padding: 11px 20px;
+    border-radius: 8px;
+    text-align: center;  
+}
+
+.header_botones_derechos .cuenta:hover{
+    border: 1px solid #d8dae0;
+}
+
+.menu_mobile{
+    display: none;
+    height: 24px;
+    color: black;
+}
+
+@media screen and (max-width: 1140px){
+    .header_nav_anclas,
+    .header_botones_derechos .pais,
+    .header_botones_derechos .cuenta {
+        display: none;
+    }
+
+    .menu_mobile{
+        display: flex;
+    }
+
+    header{
+        padding: 10px 20px;
+        height: 65px;
+    }
+}
+
+
+/* ############### sector hero ####################### */
+
+
+
+.hero{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: write;
+    padding: 0px 40px;
+}
+
+.hero_contenedor{
+    width: 1127px;
+    height: 410px;   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1126px){
+    .hero_contenedor{
+        height: 768px;
+        width: 768px;
+        margin: 0px 123px;
+        padding: 0px 40px;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+@media screen and (max-width: 768px){
+    .hero_contenedor{
+        height: 100%;
+        width: 100%;
+        padding: 0px 15px;
+    }
+}
+
+.hero_contenedor_izquierda{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 334px;
+    z-index: 2;
+}
+
+@media screen and (max-width: 1126px){
+    .hero_contenedor_izquierda{
+        height: 688px;
+        width: 688px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .hero_contenedor_izquierda{
+        width: 508px;
+        height: 306px;
+    }
+
+    .hero{
+        padding: 0px 20px;
+    }
+}
+
+@media screen and (max-width: 510px){
+    .hero_contenedor_izquierda {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .hero{
+        padding: 0px 0px;
+    }
+}
+
+.hero_contenedor_izquierda svg{
+    width: 20px;
+    height: 20px;
+}
+
+.hero_contenedor_izquierda_parrafo{
+    color: #1D1E20; 
+    font-size: 20px;
+    width: 455px;
+    height: 64px;
+}
+
+.hero_contenedor_izquierda_parrafo span{
+    color: #673de6; 
+    font-size: 20px;
+    width: 40px;
+    height: 26px;
+}
+
+@media screen and (max-width: 1126px){
+    .hero_contenedor_izquierda_parrafo{
+        width: 470px;
+        height: 24px;
+        font-size: 18px;
+    }
+
+    .hero_contenedor_izquierda_parrafo span{
+        font-size: 18px;
+        width: 36px;
+        height: 24px;
+    }
+    
+}
+
+@media screen and (max-width: 510px){
+    .hero_contenedor_izquierda_parrafo{
+        max-width: 100%;
+        margin: 0px 0px 30px;
+    }
+}
+
+.hero_contenedor_izquierda h1{
+    color: #1D1E20; 
+    font-size: 36px;
+    width: 455px;
+    height: 80px;
+    margin: 0px 0px 8px;
+}
+
+@media screen and (max-width: 1126px){
+    .hero_contenedor_izquierda h1{
+        font-size: 28px;
+        width: 488px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 510px){
+    .hero_contenedor_izquierda h1 {
+        max-width: 100%;
+        margin: 0px 0px 30px;
+    }
+}
+
+.hero_contenedor_izquierda_beneficios{
+    color: #1D1E20; 
+    font-size: 16px;
+    margin: 0px 0px 2px;
+    width: 455px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.hero_contenedor_izquierda_beneficios--largo{
+    height: 48px;
+    margin: 0px 0px 4px;
+}
+
+.hero_contenedor_izquierda_beneficios--ultimo{
+    margin: 0px 0px 24px;
+}
+
+@media screen and (max-width: 1126px) {
+    .hero_contenedor_izquierda_beneficios{
+        width: 488px;
+        height: 24px;
+        font-size: 16px;
+        margin: 0px 0px 8px;
+    }
+
+    .hero_contenedor_izquierda_beneficios--ultimo{
+        margin: 0px 0px 16px;
+    }
+}
+
+@media screen and (max-width: 510px){
+    .hero_contenedor_izquierda_beneficios {
+        max-width: 100%;
+        margin: 0px 0px 25px;
+    }
+}
+
+.hero_boton{
+    text-decoration: none;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    width: 186px;
+    height: 48px;
+    padding: 11px 47px;
+    border-radius: 8px;
+    text-align: center;  
+    margin: 0px 0px 24px;
+    background-color: #673de6;
+    justify-content: center;  
+}
+
+.hero_boton:hover{
+    background-color: #5025d1;
+}
+
+.hero_boton span{
+    color: white;
+    font-size: 16px;
+    width: 90px;
+    height: 24px;
+}
+
+@media screen and (max-width: 1126px) {
+    .hero_boton{
+        width: 186px;
+        height: 48px;
+        padding: 11px 47px;
+    }
+
+    .hero_boton span{
+        font-size: 16px;
+        width: 90px;
+        height: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero_boton{
+        width: 508px;
+        padding: 11px 47px;
+        margin: 0px 0px 10px;
+    }
+
+    .hero_boton span{
+        font-size: 16px;
+        width: 90px;
+        height: 24px;
+    }
+
+}
+
+@media screen and (max-width: 510px){
+    .hero_boton {
+        width: 100%;
+        max-width: 300px;
+        
+    }
+}
+
+.hero_contenedor_izquierda_garantia{
+    width: 455px;
+    height: 24px;
+    color: #1D1E20; 
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+@media screen and (max-width: 1126px){
+    .hero_contenedor_izquierda_garantia{
+        width: 488px;
+        height: 24px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 510px){
+    .hero_contenedor_izquierda_garantia {
+        max-width: 100%;
+        margin-top: 0px 10px;
+        
+    }
+}
+
+.hero_contenedor_derecha img{
+    width: 616px;
+    height: 403px;
+    z-index: 1;
+}
+
+.hero_contenedor_derecha img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+/* ############### sector migracion ####################### */
+.migracion{    
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #1f1346;
+}
+
+.migracion_contenedor{
+    width: 979px;
+    height: 600px;   
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width: 983px){
+    .migracion{
+        height: auto;
+        padding: 12px;
+        gap: 20px;
+    }
+
+    .migracion_contenedor{
+        height: auto;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .migracion{
+        padding: 32px;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 512px){
+    .migracion{
+        padding: 26px;
+    }
+}
+
+.titulo{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+}
+
+.texto{
+    width: 100%;
+    text-align: center;
+    color: white;
+    line-height: 1.5;
+}
+
+.cajas{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 983px){
+    .cajas{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.caja{
+    width: 350px;
+    height: 230px;
+    background-color: #2f1c6a;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    gap : 15px;
+    padding: 20px;
+    color: white;
+    padding: 20px;
+}
+
+@media screen and (max-width: 983px){
+    .caja{
+        width: 700px;
+        height: 200px;
+        padding: 32px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .caja{
+        width: 500px;
+        height: 200px;
+    }
+}
+@media screen and (max-width: 512px){
+    .caja{
+        width: auto;
+        height: auto;
+    }
+}
+
+.caja_imagen{
+    width: 40px;
+    height: 40px;
+}
+
+.caja_texto{
+    color: white;
+    line-height: 1.25;
+}
+
+.boton{
+    width: 140px;
+    height: 40px;
+    background-color: #673DE6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.boton:hover{
+    background-color: #5025d1;
+}
+
+
+
+/* ############### kodee ####################### */
+.button_kodee{
+    background-color: #673DE6;
+    padding: 8px 16px 8px 8px;
+    width: 186px;
+    height: 40px;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    gap: 8px;
+    justify-content: center;
+    line-height: 24px;
+    border: none;
+    text-align: center;
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    white-space: nowrap;
+}
+
+.button_kodee:hover{
+    background-color: #5025d1;
+}
+
+.button_kodee span{
+    width: 136px;
+    height: 24px;
+    color: white;
+    font-size: 14px;
+
+}
+
+.button_kodee i{
+    width: 16px;
+    height: 16px;
+    color: white;
+}
+
+
+
+/* ############### footer ####################### */
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #e9e6e6;
+    padding: 0px 0px;
+}
+
+.footer_contenedor{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    max-width: 1100px;
+}
+
+.footer_logo_y_redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 760px){
+    .footer_logo_y_redes{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 20px;
+        left: 0px;
+    }
+}
+
+.footer_logo_y_redes_izquierda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 147px;
+    height: 30px;
+
+
+}
+
+.footer_logo_y_redes_derecha{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    gap: 20px;
+    cursor: pointer;
+}
+.footer_logo_y_redes_derecha div:hover{
+    color: #6d7081;;
+    
+}
+@media screen and (max-width: 760px){
+    .footer_logo_y_redes_derecha{
+        justify-content: space-between;
+        width: 100%;
+        margin: 0px 0px 8px;
+        padding: 16px 0px;
+        gap: 0px;
+
+    }
+}
+
+.footer_logo_y_redes_derecha div{
+    width: 32px;
+    height: 32px;
+}
+
+.footer_tarjetas_y_politicas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0px;  
+    
+}
+
+
+
+@media screen and (max-width: 1200px){
+    .footer_tarjetas_y_politicas{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 20px;
+        left: 0px;
+    }
+}
+
+.footer_tarjetas_y_politicas_izquierda{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+@media screen and (max-width: 760px){
+    .footer_tarjetas_y_politicas_izquierda{
+        display: flex;
+        flex-wrap: wrap;  /* permite varias filas */
+        gap: 12px;
+    }
+}
+
+.footer_tarjetas_y_politicas_izquierda img{
+    width: 60px;
+    height: 40px;
+}
+.footer_tarjetas_y_politicas_izquierda a{
+    white-space: nowrap;
+}
+
+.footer_tarjetas_y_politicas_derecha{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.footer_tarjetas_y_politicas_derecha a:hover{
+    color: #5025d1;
+}
+@media screen and (max-width: 760px){
+    .footer_tarjetas_y_politicas_derecha{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
+
+.footer_tarjetas_y_politicas_derecha a{
+    text-decoration: none;
+    color: #1D1E20;
+    font-size: 14px;
+}
+
+.footer_parte_superior{
+    border-bottom: 1px solid #C4C4C4;
+    padding: 0px 0px;
+    margin-bottom: 30px;
+}
+
+.footer_licencia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px){
+    .footer_licencia{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 0px;
+        gap: 20px;
+        align-items: flex-start;
+    }
+}
+
+.footer_licencia_izquierda{
+    color: #1D1E20;
+    font-size: 14px;
+}
+
+.footer_licencia_derecha{
+    color: #1D1E20;
+    font-size: 14px;
+}

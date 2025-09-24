@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <header>
+        <div class="Header-Contenedor">
+            <h1>Julian Derudi</h1>
+            <nav>
+                <a href=""> 
+                    Inicio
+                </a>
+                <a href=""> 
+                    Educacion y Skills
+                </a>
+                <a href=""> 
+                    Proyectos
+                </a>
+                <a href=""> 
+                    Contacto
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="Section_Presentacion">
+            <div class="Section_Presentacion-Texto">
+                <h2>Hola, soy <span>Julian</span></h2>
+                <p>Desarrollador front-end</p>
+
+            </div>
+            <div class="Section_Presentacion-Imagen">
+                <img src="img/inicio.png" alt="Foto de perfil">
+            </div>
+        </section>
+
+        <section class="Section_EducacionYSkills">
+            <h2>Educación y Skills</h2>
+            <div class="Section_Educacion-contenedor">
+                <img src="img/pc-educacion.png" alt="imagen educacion">
+                <img src="img/carrera-educacion2.png" alt="imagen de mi carrera">
+            </div>
+            <div class="Section_Skills-contenedor">
+                    <i class="bi bi-git"></i>
+                    <i class="bi bi-github"></i>
+                    <i class="bi bi-css"></i>
+                    <i class="bi bi-filetype-html"></i>
+                    <i class="bi bi-javascript"></i>
+            </div>
+        </section>
+
+        <section class="Section_Proyectos">
+            <h2>Proyectos</h2>
+            <div class="Section_Proyectos-contenedor">
+                <div class="Section_Proyectos-Hijo">
+                    <h3>1er entrega Full-Stack</h3>
+                    <p>
+                        En esta práctica recreé varias secciones de la 
+                        página principal de Hostinger usando HTML, CSS (Flexbox) 
+                        y despliegue en GitHub Pages. Fue un ejercicio práctico 
+                        para afianzar estructuras semánticas, layout responsive 
+                        y flujo de trabajo con Git.
+                    </p>
+                    <div class="Section_Proyectos-Hijo-Tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>GitHub</span>
+                    </div>
+                    <a href="pages/tp1-curso/index.html"><button>Ir a proyecto</button></a>
+                </div>
+                <div class="Section_Proyectos-Hijo">
+                    <h3>2da entrega Full-Stack</h3>
+                    <p>
+                        Todavia no hice nada
+                    </p>
+                    <div class="Section_Proyectos-Hijo-Tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>GitHub</span>
+                    </div>
+                    <a href=""><button>Ir a proyecto</button></a>
+                </div>
+                <div class="Section_Proyectos-Hijo">
+                    <h3>3da entrega Full-Stack</h3>
+                    <p>
+                        Todavia no hice nada
+                    </p>
+                    <div class="Section_Proyectos-Hijo-Tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                    <a href=""><button>Ir a proyecto</button></a>
+                </div>
+                <div class="Section_Proyectos-Hijo">
+                    <h3>4da entrega Full-Stack</h3>
+                    <p>
+                        Todavia no hice nada
+                    </p>
+                    <div class="Section_Proyectos-Hijo-Tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>GitHub</span>
+                        <span>Git</span>
+                    </div>
+                    <a href=""><button>Ir a proyecto</button></a>
+                </div>
+                
+
+            </div>
+        </section>
+
+        <section class="Section_Contacto">
+            <h2>Contáctame</h2>
+            <div class="Section_Contacto-contenedor">
+                <img src="img/contacto.png" alt="Imagen De Contacto">
+                <div class="Section_Contacto-gmail">
+                    <form id="contact-form">
+                        <input type="text" name="user_name" placeholder="Nombre completo" required>
+                        <input type="email" name="user_email" placeholder="Correo electrónico" required>
+                        <textarea name="message" placeholder="Escribe tu mensaje" required></textarea>
+                        <button type="submit">Enviar mensaje</button>
+                      </form>
+                  
+                      <script>
+                        // Inicializa EmailJS con tu PUBLIC KEY
+                        (function(){
+                          emailjs.init("TU_PUBLIC_KEY"); 
+                        })();
+                    
+                        document.getElementById("contact-form").addEventListener("submit", function(event) {
+                          event.preventDefault();
+                        
+                          emailjs.sendForm("TU_SERVICE_ID", "TU_TEMPLATE_ID", this)
+                            .then(() => {
+                              alert("✅ Mensaje enviado con éxito!");
+                              this.reset();
+                            }, (error) => {
+                              alert("❌ Error al enviar: " + JSON.stringify(error));
+                            });
+                        });
+                      </script>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
