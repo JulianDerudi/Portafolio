@@ -25,6 +25,10 @@ body{
     align-items: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ############### HEADER STYLES ############### */
 
 header{
@@ -38,7 +42,7 @@ header{
     justify-content: center;
     z-index: 1000;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-    
+    gap: 100px;
 }
 
 .Header-Contenedor{
@@ -46,8 +50,9 @@ header{
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    max-width: 140vh;
-    width: 100%;
+    max-width: 170vh;
+    width: 165vh;
+    gap: 0px;
 }
 
 header h1{
@@ -88,17 +93,13 @@ header nav a:hover{
 /* ############### MAIN STYLES ############### */
 main{
     background-color: var(--color-000);
-<<<<<<< HEAD
     max-width: 170vh;
-    height: 400vh;
-=======
-    max-width: 200vh;
->>>>>>> 148c188cb10dcf04f3744c38203507a5915f63e1
 }
 
 main section{
     padding: 20px 40px;
     text-align: center;
+    width: 100%;
 }
 
 /* ############### PRESENTACION STYLES ############### */
@@ -155,19 +156,19 @@ main section{
 .Section_Skills-contenedor{
     display: flex;
     flex-direction: space-around;
+    flex-wrap: wrap;
     gap: 50px;
     margin-top: 50px;
     margin-left: 50px;
 }
 
-.Section_Skills-contenedor i{
-    font-size: 50px;
+.Section_Skills-contenedor img{
+    width: 50px;
     color: var(--color-400);
 }
-.Section_Skills-contenedor i:hover {
+.Section_Skills-contenedor img:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
-    border-radius: 30px;
 }
 
 
