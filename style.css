@@ -64,6 +64,12 @@ header nav{
     gap: 70px;
     margin-right: 220px;
 }
+@media (max-width: 1035px) {
+    header nav{
+        display:none;
+    }
+}
+
 
 header nav a{
     text-decoration: none; 
@@ -83,7 +89,7 @@ header nav a:hover{
 /* ############### MAIN STYLES ############### */
 main{
     background-color: var(--color-000);
-    max-width: 200vh;
+    max-width: 170vh;
     height: 400vh;
 }
 
