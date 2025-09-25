@@ -38,7 +38,7 @@ header{
     justify-content: center;
     z-index: 1000;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-    gap: 100px;
+    
 }
 
 .Header-Contenedor{
@@ -46,9 +46,8 @@ header{
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    max-width: 170vh;
-    width: 165vh;
-    gap: 0px;
+    max-width: 140vh;
+    width: 100%;
 }
 
 header h1{
@@ -84,7 +83,6 @@ header nav a:hover{
 main{
     background-color: var(--color-000);
     max-width: 200vh;
-    height: 400vh;
 }
 
 main section{
