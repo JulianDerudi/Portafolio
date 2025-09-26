@@ -5,68 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-    
     <header>
-        <div class="Header-Contenedor">
-            <h1>Julian Derudi</h1>
+        <div class="Header-contenedor">
+            <h1> Julián Derudi </h1>
             <nav>
-                <a href="#inicio"> 
-                    Inicio
-                </a>
-                <a href="#educacion"> 
-                    Educacion y Skills
-                </a>
-                <a href="#proyectos"> 
-                    Proyectos
-                </a>
-                <a href="#contacto"> 
-                    Contacto
-                </a>
+                <a href="#Inicio">Inicio</a>
+                <a href="#EducacionYSkills">Educacion y Skills</a>
+                <a href="#Proyectos">Proyectos</a>
+                <a href="#Contacto">Contacto</a>
             </nav>
         </div>
     </header>
-
     <main>
-        <section id="inicio" class="Section_Presentacion" >
-            <div class="Section_Presentacion-Texto">
-                <h2>Hola, soy <span>Julian</span></h2>
+        <section id="Inicio" class="Section_Inicio">
+            <div class="Section_Inicio-texto">
+                <h2>Hola, soy <span>Julián</span></h2>
                 <p>Desarrollador front-end</p>
-
             </div>
-            <div class="Section_Presentacion-Imagen">
-                <img src="img/inicio.png" alt="Foto de perfil">
-            </div>
+            <img src="img/inicio.png" alt="imagen de inicio">
         </section>
-
-        <section id="educacion" class="Section_EducacionYSkills" >
+        
+        <section id="EducacionYSkills" class="Section_EducacionYSkills">
             <h2>Educación y Skills</h2>
             <div class="Section_Educacion-contenedor">
-                <img src="img/pc-educacion.png" alt="imagen educacion">
-                <img src="img/carrera-educacion2.png" alt="imagen de mi carrera">
+                <img class="Imagen_SoloPC" src="img/pc-educacion.png" alt="imagen de pc">
+                <img src="img/carrera-educacion.png" alt="imagen de la carrera">
             </div>
             <div class="Section_Skills-contenedor">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />   
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" />
-          
-          
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />   
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" />
             </div>
         </section>
 
-        <section id="proyectos" class="Section_Proyectos" >
-            <h2>Proyectos</h2>
+        <section id="Proyectos" class="Section_Proyectos">
+            <h2>Mis Proyectos</h2>
             <div class="Section_Proyectos-contenedor">
-                <div class="Section_Proyectos-Hijo">
+                <div class="Section_Proyectos-proyecto">
                     <h3>1er entrega Full-Stack</h3>
                     <p>
                         En esta práctica recreé varias secciones de la 
@@ -75,14 +59,14 @@
                         para afianzar estructuras semánticas, layout responsive 
                         y flujo de trabajo con Git.
                     </p>
-                    <div class="Section_Proyectos-Hijo-Tecnologias">
+                    <div class="Section_Proyectos-proyecto--skills">
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>GitHub</span>
                     </div>
                     <a href="pages/tp1-curso/index.html"><button>Ir a proyecto</button></a>
                 </div>
-                <div class="Section_Proyectos-Hijo">
+                <div class="Section_Proyectos-proyecto">
                     <h3>proyecto Final Data Engineering</h3>
                     <p>
                         implementamos todas las tecnicas aprendidas a lo largo
@@ -90,83 +74,26 @@
                         de datos, desde una API hasta una base de datos SQL, todo
                         el proceso está hecho con python. 
                     </p>
-                    <div class="Section_Proyectos-Hijo-Tecnologias">
+                    <div class="Section_Proyectos-proyecto--skills">
                         <span>ETL</span>
                         <span>Python</span>
                         <span>SQL</span>
                     </div>
                     <a href="https://github.com/JulianDerudi/Data-Engineering"><button>Ir a proyecto</button></a>
                 </div>
-                <div class="Section_Proyectos-Hijo">
-                    <h3>3da entrega Full-Stack</h3>
-                    <p>
-                        Todavia no hice nada
-                    </p>
-                    <div class="Section_Proyectos-Hijo-Tecnologias">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                    </div>
-                    <a href=""><button>Ir a proyecto</button></a>
-                </div>
-                <div class="Section_Proyectos-Hijo">
-                    <h3>4da entrega Full-Stack</h3>
-                    <p>
-                        Todavia no hice nada
-                    </p>
-                    <div class="Section_Proyectos-Hijo-Tecnologias">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>GitHub</span>
-                        <span>Git</span>
-                    </div>
-                    <a href=""><button>Ir a proyecto</button></a>
-                </div>
-                
+                <div class="Section_Proyectos-proyecto">
 
+                </div>
             </div>
         </section>
 
-
-
-        <section id="contacto" class="Section_Contacto" >
-            <h2>Contáctame</h2>
+        <section id="Contacto" class="Section_Contacto">
+            <h2>Contactame</h2>
             <div class="Section_Contacto-contenedor">
-                <img src="img/contacto.png" alt="Imagen De Contacto">
-                <div class="Section_Contacto-gmail">
-                    <form id="contact-form">
-                        <input type="text" name="user_name" placeholder="Nombre completo" required>
-                        <input type="email" name="user_email" placeholder="Correo electrónico" required>
-                        <textarea name="message" placeholder="Escribe tu mensaje" required></textarea>
-                        <button type="submit">Enviar mensaje</button>
-                      </form>
-                  
-                      <script>
-                        // Inicializa EmailJS con tu PUBLIC KEY
-                        (function(){
-                          emailjs.init("TU_PUBLIC_KEY"); 
-                        })();
-                    
-                        document.getElementById("contact-form").addEventListener("submit", function(event) {
-                          event.preventDefault();
-                        
-                          emailjs.sendForm("TU_SERVICE_ID", "TU_TEMPLATE_ID", this)
-                            .then(() => {
-                              alert("✅ Mensaje enviado con éxito!");
-                              this.reset();
-                            }, (error) => {
-                              alert("❌ Error al enviar: " + JSON.stringify(error));
-                            });
-                        });
-                      </script>
-                </div>
+                <img src="img/contacto.png" alt="imagen de contacto">
             </div>
         </section>
     </main>
-
-    <footer>
-
-    </footer>
-
+    
 </body>
 </html>
